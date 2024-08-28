@@ -1,3 +1,63 @@
 /* imports */
 @import url('https://fonts.cdnfonts.com/css/cottsmic');
 @import url('https://fonts.cdnfonts.com/css/plus-jakarta-sans');
+
+body{
+    background-color: #0b1126;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #8f9ece;
+}
+
+/* Styling for header shown on every page */
+#header_div{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(1, 8, 32, 0.8);
+    padding-top: 3.5%;
+    transition: 0.4s;
+}
+
+#header_logo{
+    width: 100px;
+    padding-left: 20%;
+    padding-top: 25px;
+}
+
+#header_title{
+    font-family: 'Cottsmic', sans-serif;
+    font-size: 400%;
+    color: #5278f6;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-left: 10%;
+    transition: 0.4s;
+}
+
+/* Styling navigation menu/links to other pages in the header */
+nav {
+    display: inline-flex;
+    padding-right: 2%;
+    padding-top: 70px;
+}
+
+#nav_link {
+    color: #5467A3;
+    text-decoration: none;
+    text-overflow: uppercase;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+
+#nav_link:hover {
+    color: #104afb;
+    font-size: 110%;
+}
+
+
