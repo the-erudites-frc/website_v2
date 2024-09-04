@@ -8,6 +8,17 @@ body{
     color: #8f9ece;
 }
 
+h1{
+    font-family: 'Cottsmic', sans-serif;
+    font-size: 250%;
+    color: #5278f6;
+}
+
+h3 {
+    font-family: 'Cottsmic', sans-serif;
+    color: #5278f6;
+}
+
 /* Styling for header shown on every page */
 #header_div{
     position:fixed;
@@ -25,6 +36,8 @@ body{
     width: 100px;
     padding-left: 20%;
     padding-top: 25px;
+    animation: header_logo-load ease-in;
+    animation-duration: 3s;
 }
 
 #header_title{
@@ -47,7 +60,7 @@ nav {
 #nav_link {
     color: #5467A3;
     text-decoration: none;
-    text-overflow: uppercase;
+    text-transform: uppercase;
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-align: center;
     white-space: nowrap;
@@ -60,4 +73,123 @@ nav {
     font-size: 110%;
 }
 
+/* starting/page change animation styling */
+#overlay {
+    background-color: rgba(1, 8, 32);
+    position: fixed;
+    
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
 
+.loaded #overlay {
+    z-index: -1001;
+    opacity: 0%;
+    transition: all 0.3s ease-out;
+}
+
+
+#starting_gif {
+    z-index: 1000;
+    height: 1000px;
+    display: block;
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.loaded #starting_gif {
+    z-index: -1000;
+    opacity: 0%;
+    transition: all 0.3s ease-out;
+}
+
+@keyframes header_logo-load {
+    0% {
+       transform: scale(1500px);
+    }
+
+    100% {
+        transform: scale(1500px);
+    }
+}
+
+/* Styling for homepage intro section */
+#intro_section {
+    margin-top: 300px;
+    display: none;
+}
+
+#intro_img {
+    margin-top: 4%;
+    margin-left: 300px;
+    height: 600px;
+    transition: 100ms ease-in;
+}
+
+#intro_img:hover {
+    margin-top: 2%;
+    height:650px;
+}
+
+/* Stylikng for buttons on page */
+.btns{
+    width: 40%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 30%;
+}
+
+button {
+    padding: 10%;
+    width: 250px;
+    background: none;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #104afb, #3d83ff) 1;
+    transition: 0.3s;
+}
+
+#circle {
+    margin-right: 10%;
+    height: 25px;
+    width: 25px;
+    background-color: #104afb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#btn_txt{
+    color: #5467A3;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 150%;
+    transition: 0.5s;
+}
+
+button:hover {
+    #btn_txt{
+        color: #104afb;
+        font-size: 170%;
+    }
+}
+
+button:active {
+    background-image: linear-gradient(to right, #104afb, #3d83ff);
+    width: 200;
+
+    #circle{
+        background-color: #0b1126;
+    }
+
+    #btn_txt{
+        color: #0b1126;
+        font-size: 150%;
+    }
+}
