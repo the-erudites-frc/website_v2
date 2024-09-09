@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Erudites</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links/imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    
+</head>
+<body>
+    <script src="../js/main.js"></script>
+    
+    <!--Header including logo, website title, and nav bar-->
+    <header id="header_div">
+        <!--Logo that shows up in top left corner-->
+        <a href="../index.html"><img id="header_logo" src="../images/erudites_logo.PNG"></a>
+        <!--Title that shows up in center of header-->
+        <h1 id="header_title">The Erudites</h1>
+        <!--Navigation bar/links to other pages-->
+        <nav>
+            <a id="nav_link" href="../index.html">Home</a>
+            <a id="nav_link" href="join.html">Join Us</a>
+            <a id="nav_link" href="sponsor.html">Sponsor Us</a>
+        </nav>
+    </header>
+
+    <!-- The screen for page preloader -->
+    <div id="overlay">
+        <img id="starting_gif" src="../images/erudites_logo.gif">
+    </div>
+    
+    <!-- The code thats individual to each page is in the main div -->
+    <main>
+        <div id="sponsors_txt">
+            <h1>Sponsor Us !</h1>
+            <p>
+                The Erudites can provide and participate in outstanding learning 
+                experiences thanks to the <b>generous contributions of time, 
+                materials, and funds</b>. Donations <b>directly fund robot 
+                supplies, parts, equipment, and competition fees</b>. Our mentors 
+                volunteer their time, and team members cover their travel and 
+                accommodations.
+            </p>
+
+            <h3>Types of Sponsors ...</h3>
+            <div style="margin-left: 25%;width: 50%; display: flex; justify-content: space-between;">
+                <button id="btn_spons" onclick="show_below('monetary')"><i class="fa fa-usd">
+                </i></button>
+                <button id="btn_spons" onclick="show_below('buildspace')"><i class="fa fa-wrench">
+                </i></button>
+                <button id="btn_spons" onclick="show_below('materials')"><i class="fa fa-cubes">
+                </i></button>
+            </div>
+            
+
+            <div id="monetary" style="display: none; margin-left: 50px;">
+                <h3 style="font-size: smaller;">Monetary</h3>
+                <table>
+                    <tr>
+                        <th>Levels:</th>
+                        <td>Bronze</td>
+                        <td>Silver</td>
+                        <td>Gold</td>
+                    </tr>
+                    <tr>
+                        <th>Ranges:</th>
+                        <td>$50-$99</td>
+                        <td>$100-$499</td>
+                        <td>$500+</td>
+                    </tr>
+                    <tr>
+                        <th>Benefits:</th>
+                        <td>Company name on our shirts worn at competitions and website</td>
+                        <td>Company name on our shirts, website, and pit area</td>
+                        <td>Company name on our shirts, website, pit area, and robot</td>
+                    </tr>
+                </table>
+            <!-- end of monetary section -->
+            </div> 
+
+            <div id="buildspace" style="display: none; margin-left: 50px;">
+                <h3 style="font-size: smaller;">Buildspace</h3>
+                <p>
+                    Monetary funds are not the only way to support our team! Building space 
+                    is also crucial for our robotics team, especially during the build season. 
+                    Companies can support us by providing a space where we can build and 
+                    work on our robots.
+                </p>
+            <!-- end of buildspace section -->
+            </div>
+
+            <div id="materials" style="display: none; margin-left: 50px;">
+                <h3 style="font-size: smaller;">Materials</h3>
+                <p>
+                    Aside from building space and monetary funds, materials are another great 
+                    way sponsors can support our team. Materials would include metal, sensors, 
+                    and other parts that can be used to build our robot.
+                </p>
+            <!-- end of materials section -->
+            </div>
+         <!-- end of sponsors text section -->
+        </div>
+        
+        <br>
+            <!-- buttons to bring them to more information and help them sign up -->
+            <div class="btns" style="">
+                <!-- button to join page -->
+                <a href="../images/sponsorship_pack.pdf" target="_blank">
+                    <button id="btn" style="width:300px;">
+                        <span id="circle"></span>
+                        <span id="btn_txt">More Information</span>
+                    </button>
+                </a>
+                
+                <!-- button to sponsor page -->
+                <a href="mailto:theerudites@gmail.com?subject=Sponsorship Opportunity&body=Please provide details regarding your interest..." target="_blank">
+                    <button id="btn">
+                        <span id="circle"></span>
+                        <span id="btn_txt">Contact Us</span>
+                    </button>
+                </a>
+            <!-- buttons section end -->
+            </div> 
+
+
+    </main>
+
+    <!-- This is the footer for each page -->
+    <footer>
+        <h4 id="footer_txt">The Erudites- FRC Team 10279 </h4>
+
+        <div id="footer_icons">
+            <i id="ftr_icon" class="fa fa-instagram"></i>
+            <i id="ftr_icon" class="fa fa-linkedin-square"></i>
+            <i id="ftr_icon" class="fa fa-envelope"></i>
+        </div>
+        
+    </footer>
+</body>
+</html>

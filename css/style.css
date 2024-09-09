@@ -17,6 +17,7 @@ h1{
 h3 {
     font-family: 'Cottsmic', sans-serif;
     color: #5278f6;
+    letter-spacing: 2px;
 }
 
 /* Styling for header shown on every page */
@@ -106,33 +107,19 @@ nav {
     transition: all 0.3s ease-out;
 }
 
-@keyframes header_logo-load {
-    0% {
-       transform: scale(1500px);
-    }
-
-    100% {
-        transform: scale(1500px);
-    }
-}
-
 /* Styling for homepage intro section */
 #intro_section {
     margin-top: 300px;
-    display: none;
+    display: inline-flex;
 }
 
 #intro_img {
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 300px;
-    height: 600px;
+    height: 650px;
     transition: 100ms ease-in;
 }
 
-#intro_img:hover {
-    margin-top: 2%;
-    height:650px;
-}
 
 /* Stylikng for buttons on page */
 .btns{
@@ -141,11 +128,11 @@ nav {
     justify-content: space-between;
     padding-left: 30%;
     margin-top: 3%;
-    margin-bottom: 30%;
+    margin-bottom: 3%;
 }
 
-button {
-    padding: 10%;
+#btn {
+    padding: 25px;
     width: 250px;
     background: none;
     border-width: 3px;
@@ -173,14 +160,14 @@ button {
     transition: 0.5s;
 }
 
-button:hover {
+#btn:hover {
     #btn_txt{
         color: #104afb;
         font-size: 170%;
     }
 }
 
-button:active {
+#btn:active {
     background-image: linear-gradient(to right, #104afb, #3d83ff);
     width: 200;
 
@@ -192,4 +179,63 @@ button:active {
         color: #0b1126;
         font-size: 150%;
     }
+}
+
+/* Styling for the footer */
+footer{
+    width:100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(1, 8, 32, 0.8);
+}
+
+#footer_txt{
+    padding-left: 100px;
+    font-size: small;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color:#8f9ece;
+}
+
+#footer_icons{
+    width:100px;
+    padding-right: 70px;
+    padding-top: 1.2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ftr_icon{
+    transition:0.3s;
+}
+
+#ftr_icon:hover{
+    color:#5467A3;
+    font-size:20px;
+}
+
+/* Sponsors page stylization */
+#sponsors_txt {
+    padding-top: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#btn_spons{
+    background: none;
+    border: none;
+    color: #8f9ece;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+#btn_spons:hover {
+    color: #5278f6;
+}
+
+#btn_spons:active{
+    font-size: 45px;
+    color: #5467A3;
 }
