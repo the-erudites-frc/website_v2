@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Erudites</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- links/imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    
+</head>
+<body>
+    <script src="../js/main.js"></script>
+    
+    <!--Header including logo, website title, and nav bar-->
+    <header id="header_div">
+        <!--Logo that shows up in top left corner-->
+        <a href="../index.html"><img id="header_logo" src="../images/erudites_logo.PNG"></a>
+        <!--Title that shows up in center of header-->
+        <h1 id="header_title">The Erudites</h1>
+        <!--Navigation bar/links to other pages-->
+        <nav>
+            <a id="nav_link" href="../index.html">Home</a>
+            <a id="nav_link" href="join.html">Join Us</a>
+            <a id="nav_link" href="sponsor.html">Sponsor Us</a>
+        </nav>
+    </header>
+
+    <!-- The screen for page preloader -->
+    <div id="overlay">
+        <img id="starting_gif" src="../images/erudites_logo.gif">
+    </div>
+    
+    <!-- The code thats individual to each page is in the main div -->
+    <main>
+        <!-- starting/intro blerb for members application form -->
+        <div style="padding-left:20rem; padding-right: 20rem; padding-top: 20rem;">
+            <h3>Welcome ...</h3>
+            <p>
+                The Erudites team welcomes you to join our team. We are a FRC team 
+                that will run during the 2024-2025 season. There are three main 
+                subteams in The Erudites: Hardware, Software, and Business. Once you 
+                are admitted into a subteam, you will be under the supervision of 
+                the team head. We encourage you to answer each question with your 
+                best efforts. Before you submit your application, please be aware 
+                that we require your full efforts and dedication to the team. Thank 
+                you!
+            </p>
+        </div>
+
+        <form>
+            <!-- Personal details section of form -->
+            <div id="personal_deets">
+                <span style="width: 15rem; display: inline-flex; justify-content: space-between;">
+                    <i class="fa fa-address-card" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
+                    <h3>Personal Details</h3>
+                </span>
+                <p><b>Please fill in the following details for us to store in our record.</b></p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                <br>
+                <label for="phone_num">Phone Number:</label>
+                <input type="text" id="phone_num">
+                <br>
+                <label>What grade will you be in the start of September of 2024?</label>
+                <br>
+                <input type="radio" id="gr9" name="grade">
+                <label for="gr9">Grade 9</label><br>
+                <input type="radio" id="gr10" name="grade">
+                <label for="gr10">Grade 10</label><br>
+                <input type="radio" id="gr11" name="grade">
+                <label for="gr11">Grade 11</label><br>
+                <input type="radio" id="gr11" name="grade">
+                <label for="gr11">Grade 12</label>
+                <br>
+                <label for="school_name">Full name of secondary school as of 2024 fall:</label>
+                <input type="text" id="school_name">
+            </div>
+
+            <!-- interests section of form -->
+            <div id="interests_deets">
+                <h3>Interests & Background</h3>
+                <p><b>These questions are to get to know you better and understand your best role on the team.</b></p>
+
+            </div>
+            
+        </form>
+
+    </main>
+
+    <!-- This is the footer for each page -->
+    <footer>
+        <h4 id="footer_txt">The Erudites- FRC Team 10279 </h4>
+
+        <div id="footer_icons">
+            <i id="ftr_icon" class="fa fa-instagram"></i>
+            <i id="ftr_icon" class="fa fa-linkedin-square"></i>
+            <i id="ftr_icon" class="fa fa-envelope"></i>
+        </div>
+        
+    </footer>
+</body>
+</html>
