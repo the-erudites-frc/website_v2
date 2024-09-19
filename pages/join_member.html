@@ -53,7 +53,7 @@
 
         <form>
             <!-- Personal details section of form -->
-            <div id="personal_deets">
+            <div id="personal_deets" style="margin-bottom: 3rem;">
                 <span style="width: 15rem; display: inline-flex; justify-content: space-between;">
                     <i class="fa fa-address-card" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
                     <h3>Personal Details</h3>
@@ -69,7 +69,7 @@
                 <br>
                 <label for="phone_num">Phone Number:</label>
                 <input type="text" id="phone_num">
-                <br>
+                <br><br>
                 <label>What grade will you be in the start of September of 2024?</label>
                 <br>
                 <input type="radio" id="gr9" name="grade">
@@ -80,20 +80,100 @@
                 <label for="gr11">Grade 11</label><br>
                 <input type="radio" id="gr11" name="grade">
                 <label for="gr11">Grade 12</label>
-                <br>
+                <br><br>
                 <label for="school_name">Full name of secondary school as of 2024 fall:</label>
                 <input type="text" id="school_name">
             </div>
 
             <!-- interests section of form -->
-            <div id="interests_deets">
-                <h3>Interests & Background</h3>
-                <p><b>These questions are to get to know you better and understand your best role on the team.</b></p>
+            <div id="interests_deets" style="margin-bottom: 3rem;">
+                <span style="width: 20.7rem; display: inline-flex; justify-content: space-between;">
+                    <i class="fa fa-pencil-square-o" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
+                    <h3>Interests & Background</h3>
+                </span>
+                <p><b>
+                    These questions are to get to know you better and understand your best 
+                    role on the team.
+                </b></p>
+                <br>
+                <label>Select what you would like to learn from the following:</label>
+                <br>
+                <input type="checkbox" id="learn1">
+                <label for="learn1" class="checkbox_txt"> Design mechanical components and create CAD drawings</label><br>
+                <input type="checkbox" id="learn2">
+                <label for="learn2" class="checkbox_txt"> Create and host STEM workshops</label><br>
+                <input type="checkbox" id="learn3">
+                <label for="learn3" class="checkbox_txt"> Develop and test robot code</label><br>
+                <input type="checkbox" id="learn4">
+                <label for="learn4" class="checkbox_txt"> Build a brand and market a team on social media</label><br>
+                <input type="checkbox" id="learn5">
+                <label for="learn5" class="checkbox_txt"> Studying other teams and collecting data</label><br>
+                <input type="checkbox" id="learn6">
+                <label for="learn6" class="checkbox_txt"> Creating strategies to use during battles</label><br>
+                <br>
+                <label>
+                    What are your extracurriculars? Briefly explain how they affect you and 
+                    why you enjoy them:
+                </label><br>
+                <textarea id="ecs"></textarea>
+                <br><br>
+                <label>Select all the subteams you would like to join from the following:</label>
+                <br>
+                <input type="checkbox" id="subteam1">
+                <label for="subteam1" class="checkbox_txt"> Hardware</label><br>
+                <input type="checkbox" id="subteam2">
+                <label for="subteam2" class="checkbox_txt"> Software</label><br>
+                <input type="checkbox" id="subteam3">
+                <label for="subteam3" class="checkbox_txt"> Business</label><br>
+                <input type="checkbox" id="subteam4">
+                <label for="subteam4" class="checkbox_txt"> Driveteam</label><br>
+                <input type="checkbox" id="subteam5">
+                <label for="subteam5" class="checkbox_txt"> Media</label><br>
+                <input type="checkbox" id="subteam6">
+                <label for="subteam6" class="checkbox_txt"> Strategy</label><br>
+                <br>
+                <label>
+                    Why would you like to join this team? Include the your top subteam 
+                    choice as well (hardware, software, business):
+                </label><br>
+                <textarea id="reasoning"></textarea>
+                <br>
+            </div>
 
+            <div id="b4_submit" style="margin-bottom: 3rem;">
+                <span style="width: 19.5rem; display: inline-flex; justify-content: space-between;">
+                    <i class="fa fa-exclamation" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
+                    <h3>Read Before Submitting</h3>
+                </span>
+
+                <p>
+                    Participating on an FRC team is a major time commitment, especially during build 
+                    season (January - March) as we are only given eight weeks to design, build, and 
+                    program our competition robot. As a member, your teammates will rely on you to do 
+                    your part. By applying, you agree to this time commitment. Please note that 
+                    schoolwork is not an excuse for poor commitment during the season. You will also 
+                    be expected to attend in-person or online meetings in Stouffville. Additionally, 
+                    there will be a fee of $150 per member. We kindly request this fee to cover our 
+                    initial registration expenses. Rest assured, if we are successful with sponsorship 
+                    funds, we will promptly reimburse you.This ensures that tournament Registration 
+                    fees can be met and will allow the team to compete. If you cannot pay this fee, 
+                    there are options available to help you, so upon acceptance to the team, you are 
+                    encouraged to talk to the team's Co-Captains. This should not hold you back from 
+                    applying! All team members are expected to volunteer at events our team will 
+                    host/partner with for the community. It is embedded in our team values to spread 
+                    our love for STEM with those around us. In our team, we really value honesty. 
+                    If for any reason you can't get your work done in a week, just give us a heads-up. 
+                    We understand that things can go off track sometimes, and it's totally fine to 
+                    admit it. Just remember, honesty is key, so don't hesitate to let us know if things 
+                    didn't go as planned. Feel free to contact TheEruditesfrc@gmail.com for financial 
+                    support and other questions.
+                </p>
+
+                <label>I agree to the above.</label>
+                <input type="checkbox" id="agreement">
             </div>
             
         </form>
-
     </main>
 
     <!-- This is the footer for each page -->

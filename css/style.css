@@ -296,3 +296,58 @@ footer{
     margin-left: 20rem;
     margin-right: 20rem;
 }
+
+/* General form stylization */
+form{
+    background-color: rgba(1, 8, 32);
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+input[type=text]{
+    margin:0.2rem;
+    color:#8f9ece;
+    font-size: large;
+    background-color: rgba(1, 8, 32);
+    border: none;
+    border-bottom: 0.2rem solid #5278f6;
+    transition: 0.2s
+}
+
+input[type=text]:hover{
+    border-bottom: 0.2rem solid #104afb;
+}
+
+textarea{
+    width:40rem;
+    height:10rem;
+    margin:0.2rem;
+    color:#8f9ece;
+    font-size: large;
+    background-color: rgba(1, 8, 32);
+    border: none;
+    border: 0.2rem solid #5278f6;
+    transition: 0.2s
+}
+
+textarea:hover{
+    border: 0.2rem solid #104afb;
+}
+
+input[type=checkbox] + label.checkbox_txt:hover{
+    color:#104afb;
+    transition: 0.5s;
+}
+
+input[type=checkbox]:hover + label.checkbox_txt{
+    color:#104afb;
+    transition: 0.5s;
+}
+
+input[type=checkbox]:checked + label.checkbox_txt{
+    color: #3d83ff;
+    transition: 0.5s;
+}
