@@ -37,11 +37,11 @@
     <!-- The code thats individual to each page is in the main div -->
     <main>
         <div class="caro_wrapper">
-            <h1 style="margin-left: 25%;">Join Us !</h1>
+            <h1 style="text-align: center;">Join Us !</h1>
             <div class="caro">
-                <img id="caro1" src="../images/temp2.webp">
-                <img id="caro2" src="../images/temp.jpeg">
-                <img id="caro3" src="../images/temp2.webp">
+                <img id="caro1" src="../images/img2.JPG">
+                <img id="caro2" src="../images/img3.JPG">
+                <img id="caro3" src="../images/img4.JPG">
             </div>
 
             <div class="caro_nav">
@@ -49,15 +49,19 @@
                 <a href="#caro2"></a>
                 <a href="#caro3"></a>
             </div>
-        </div>
+        </div><br><br>
 
         <!-- Why you should join our team section -->
         <div id="y_join_txt">
-            <h3>Why You Should Join Us ...</h3>
-            <ul>
+            <div style="display:flex; justify-content: center;">
+                <button id="expand_btn" onclick="show_below()">Why You Should Join Us...</button>
+            </div>
+            
+
+            <ul id="below_shown" style="display: none;">
                 <li>
                     <b>Valuable Experience With FIRST:</b>
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             Whether it be for university applications, scholarships, or resumés, 
                             having experience with FIRST can be incredibly helpful. It can show 
@@ -65,23 +69,22 @@
                             Mathematics) education.
                         </li>
                     </ul>
-                    
-                </li>
+                </li><br>
 
                 <li>
                     <b>Real and Practical Hands-On Experience:</b>
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             With FIRST robotics you able to learn and devlop hard-skills you will 
                             be using in the future. For example, learning to CAD, program a robot, 
                             use tools for soldering and much more. 
                         </li>
                     </ul>
-                </li>
+                </li><br>
 
                 <li>
                     <b>Develop Soft-Skills:</b> 
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             Aside from hard-skills, you would also be building your soft-skills 
                             like communication, interpersonal, critical-thinking, and problem-solving 
@@ -90,11 +93,11 @@
                             bonds.
                         </li>
                     </ul>
-                </li>
+                </li><br>
 
                 <li>
                     <b>Networking:</b> 
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             Speaking of lasting bonds, at FIRST events you meet and work with people 
                             who are either interesting in working in the STEM industry or professionals 
@@ -102,11 +105,11 @@
                             learning more about your interests and building your networks.
                         </li>
                     </ul>
-                </li>
+                </li><br>
 
                 <li>
                     <b>Business:</b> 
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             For those who lean more towards business and commerce, don't worry the 
                             Erudites also has a place for you! With our business subteam you can learn 
@@ -116,11 +119,11 @@
                             grateful for our business team!
                         </li>
                     </ul>
-                </li>
+                </li><br>
 
                 <li>
                     <b>It's Fun!!!:</b> 
-                    <ul style="font-size: small;">
+                    <ul>
                         <li>
                             Although FIRST may seem intimidating at first, the Erudites are here to 
                             support you along the way! We may be biased here but we truly believe 
@@ -134,13 +137,13 @@
         </div>
 
         <br>
-        <h2 style="padding-left: 20rem;">Join Us On Our FIRST Journey! ...</h2>
+        <h3 style="text-align: center;">Join Us On Our FIRST Journey! ...</h3>
 
         <!-- buttons section -->
-        <div class="btns" style="width: 44rem; margin-top: 0.2rem; padding-left: 24rem;">
+        <div class="btns" style="width: 60vw; margin-top: 0.2rem; padding-left: 20vw;">
             <!-- button to join page -->
             <a href="join_member.html">
-                <button id="btn" style="width: 20rem;">
+                <button id="btn">
                     <span id="circle"></span>
                     <span id="btn_txt">Join as Member</span>
                 </button>
@@ -148,7 +151,7 @@
             
             <!-- button to sponsor page -->
             <a href="join_mentor.html">
-                <button id="btn" style="width: 20rem;">
+                <button id="btn">
                     <span id="circle"></span>
                     <span id="btn_txt">Join as Mentor</span>
                 </button>

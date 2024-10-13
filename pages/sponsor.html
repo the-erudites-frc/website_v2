@@ -30,7 +30,7 @@
     </header>
 
     <!-- The screen for page preloader -->
-    <div id="overlay">
+    <div id="overlay" style="margin-top: -20%; margin-left: -1%;">
         <img id="starting_gif" src="../images/erudites_logo.gif">
     </div>
     
@@ -45,10 +45,10 @@
                 supplies, parts, equipment, and competition fees</b>. Our mentors 
                 volunteer their time, and team members cover their travel and 
                 accommodations.
-            </p>
+            </p><br>
 
-            <h3>Types of Sponsors ...</h3>
-            <div style="margin-left: 25%;width: 50%; display: flex; justify-content: space-between;">
+            <h3>Types of Sponsors ...</h3><br>
+            <div style="margin-left: 15vw;width: 50vw; display: flex; justify-content: space-between;">
                 <button id="btn_spons" onclick="show_below('monetary')"><i class="fa fa-usd">
                 </i></button>
                 <button id="btn_spons" onclick="show_below('buildspace')"><i class="fa fa-wrench">
@@ -75,13 +75,15 @@
                     </tr>
                     <tr>
                         <th>Benefits:</th>
-                        <td>Company name on our shirts worn at competitions and website</td>
-                        <td>Company name on our shirts, website, and pit area</td>
-                        <td>Company name on our shirts, website, pit area, and robot</td>
+                        <td>Company name on team apparel and website</td>
+                        <td>Bronze benefits + company name on pit banner and social media 
+                            shoutout</td>
+                        <td>Silver benefits + name on robot and company recognition at
+                            competition</td>
                     </tr>
                 </table>
             <!-- end of monetary section -->
-            </div> 
+            </div> <br>
 
             <div id="buildspace" style="display: none; margin-left: 50px;">
                 <h3 style="font-size: smaller;">Buildspace</h3>
@@ -92,7 +94,7 @@
                     work on our robots.
                 </p>
             <!-- end of buildspace section -->
-            </div>
+            </div> <br>
 
             <div id="materials" style="display: none; margin-left: 50px;">
                 <h3 style="font-size: smaller;">Materials</h3>
@@ -108,10 +110,10 @@
         
         <br>
             <!-- buttons to bring them to more information and help them sign up -->
-            <div class="btns" style="">
+            <div class="btns">
                 <!-- button to join page -->
                 <a href="../images/sponsorship_pack.pdf" target="_blank">
-                    <button id="btn" style="width:300px;">
+                    <button id="btn" style="width:30vw;">
                         <span id="circle"></span>
                         <span id="btn_txt">More Information</span>
                     </button>
@@ -135,9 +137,15 @@
         <h4 id="footer_txt">The Erudites- FRC Team 10279 </h4>
 
         <div id="footer_icons">
+            
             <i id="ftr_icon" class="fa fa-instagram"></i>
-            <i id="ftr_icon" class="fa fa-linkedin-square"></i>
-            <i id="ftr_icon" class="fa fa-envelope"></i>
+            <a id="ftr_icon" chref="https://www.linkedin.com/company/the-erudites-frc-10279" target="_blank">
+                <i id="ftr_icon" class="fa fa-linkedin-square"></i>
+            </a>
+            <a id="ftr_icon" chref="mailto:theerudites@gmail.com?subject=Sponsorship Opportunity" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
+            
         </div>
         
     </footer>
