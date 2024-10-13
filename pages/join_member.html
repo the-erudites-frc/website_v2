@@ -60,15 +60,15 @@
                 </span>
                 <p style="color:#5278f6;"><b>Please fill in the following details for us to store in our record.</b></p>
                 <label for="fname"><b>First Name:</b></label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" required>
                 <label for="lname"><b>Last Name:</b></label>
-                <input type="text" id="lname" name="lname">
+                <input type="text" id="lname" name="lname" required>
                 <br>
                 <label for="email"><b>Email:</b></label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" required>
                 <br>
                 <label for="phone_num"><b>Phone Number:</b></label>
-                <input type="text" id="phone_num" name="number">
+                <input type="text" id="phone_num" name="number" required>
                 <br><br>
                 <label><b>What grade will you be in the start of September of 2024?</b></label>
                 <br>
@@ -82,7 +82,7 @@
                 <label for="gr12" class="checkbox_txt">Grade 12</label>
                 <br><br>
                 <label for="school_name"><b>Full name of secondary school as of 2024 fall:</b></label>
-                <input type="text" id="school_name" name="school_name">
+                <input type="text" id="school_name" name="school_name" required>
             </div>
 
             <!-- interests section of form -->
@@ -115,7 +115,7 @@
                     What are your extracurriculars? Briefly explain how they affect you and 
                     why you enjoy them:
                 </b></label><br>
-                <textarea id="ecs"></textarea>
+                <textarea id="ecs" name="ecs" required></textarea>
                 <br><br>
                 <label><b>Select all the subteams you would like to join from the following:</b></label>
                 <br>
@@ -136,7 +136,7 @@
                     Why would you like to join this team? Include the your top subteam 
                     choice as well (hardware, software, business):
                 </b></label><br>
-                <textarea id="reasoning" name="reasoning"></textarea>
+                <textarea id="reasoning" name="reasoning" required></textarea>
                 <br>
             </div>
 
@@ -170,7 +170,7 @@
                 </p>
 
                 <input type="checkbox" id="agreement" name="agreement"  value="y">
-                <label class="checkbox_txt">I agree to the above.</label>
+                <label class="checkbox_txt" required>I agree to the above.</label>
             </div><br>
 
             <!-- button to submit form -->
