@@ -3,18 +3,18 @@
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     console.log("Entered1")
-    document.getElementById("header_div").style.paddingTop = "1rem";
-    document.getElementById("header_title").style.fontSize = "3rem";
+    document.getElementById("header_div").style.paddingTop = "4vh";
+    document.getElementById("header_title").style.fontSize = "6vh";
   } else {
     console.log("Entered2")
-    document.getElementById("header_div").style.paddingTop = "3rem";
-    document.getElementById("header_title").style.fontSize = "4rem";
+    document.getElementById("header_div").style.paddingTop = "6vh";
+    document.getElementById("header_title").style.fontSize = "7vh";
   }
 }
 
 //function used to allow a button to control if a section is shown or not
-function show_below() {
-  var x = document.getElementById("below_shown");
+function show_below(assignment) {
+  var x = document.getElementById(assignment);
   if (x.style.display === "none") {
     x.style.display = "block";
   } 

@@ -36,149 +36,16 @@
     
     <!-- The code thats individual to each page is in the main div -->
     <main>
-        <!-- starting/intro blerb for members application form -->
-        <div style="padding-left:9vw; padding-right: 9vw; padding-top: 20rem;">
-            <h3>Welcome ...</h3>
-            <p>
-                The Erudites team welcomes you to join our team. We are a FRC team 
-                that will run during the 2024-2025 season. There are three main 
-                subteams in The Erudites: Hardware, Software, and Business. Once you 
-                are admitted into a subteam, you will be under the supervision of 
-                the team head. We encourage you to answer each question with your 
-                best efforts. Before you submit your application, please be aware 
-                that we require your full efforts and dedication to the team. Thank 
-                you!
-            </p>
+        
+        <div style="padding-top: 17rem;">
+            <h1 style="text-align: center;">Join As A Member</h1>
+            <a style="margin-left: 30vw; color: #5467A3; text-decoration: none; text-transform: uppercase; font-family: 'Plus Jakarta Sans', sans-serif;" 
+            href="https://forms.gle/pLz87smtR8tWh7yh6" target="_blank">Open In New Tab</a>
+            <br>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTTDC7QBQQR-VVFCKDkHbYsRX0ugVFanRRx1Z4pSOgHPNAug/viewform?embedded=true" 
+            width="640" height="1516" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
-
-        <form action="connect.php" method="post">
-            <!-- Personal details section of form -->
-            <div id="personal_deets" style="margin-bottom: 3rem;">
-                <span style="width: 20vw; display: inline-flex; justify-content: space-between;">
-                    <i class="fa fa-address-card" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
-                    <h3>Personal Details</h3>
-                </span>
-                <p style="color:#5278f6;"><b>Please fill in the following details for us to store in our record.</b></p>
-                <label for="fname"><b>First Name:</b></label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="lname"><b>Last Name:</b></label>
-                <input type="text" id="lname" name="lname" required>
-                <br>
-                <label for="email"><b>Email:</b></label>
-                <input type="text" id="email" name="email" required>
-                <br>
-                <label for="phone_num"><b>Phone Number:</b></label>
-                <input type="text" id="phone_num" name="number" required>
-                <br><br>
-                <label><b>What grade will you be in the start of September of 2024?</b></label>
-                <br>
-                <input type="radio" id="gr9" name="grade" value="9">
-                <label for="gr9" class="checkbox_txt">Grade 9</label><br>
-                <input type="radio" id="gr10" name="grade"  value="10">
-                <label for="gr10" class="checkbox_txt">Grade 10</label><br>
-                <input type="radio" id="gr11" name="grade" value="11">
-                <label for="gr11" class="checkbox_txt">Grade 11</label><br>
-                <input type="radio" id="gr12" name="grade" value="12">
-                <label for="gr12" class="checkbox_txt">Grade 12</label>
-                <br><br>
-                <label for="school_name"><b>Full name of secondary school as of 2024 fall:</b></label>
-                <input type="text" id="school_name" name="school_name" required>
-            </div>
-
-            <!-- interests section of form -->
-            <div id="interests_deets" style="margin-bottom: 3rem;">
-                <span style="width: 27vw; display: inline-flex; justify-content: space-between;">
-                    <i class="fa fa-pencil-square-o" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
-                    <h3>Interests & Background</h3>
-                </span>
-                <p style="color:#5278f6;"><b>
-                    These questions are to get to know you better and understand your best 
-                    role on the team.
-                </b></p>
-                <br>
-                <label><b>Select what you would like to learn from the following:</b></label>
-                <br>
-                <input type="checkbox" id="learn1" name="wants2_learn" value="mech_cad">
-                <label for="learn1" class="checkbox_txt"> Design mechanical components and create CAD drawings</label><br>
-                <input type="checkbox" id="learn2" name="wants2_learn" value="host">
-                <label for="learn2" class="checkbox_txt"> Create and host STEM workshops</label><br>
-                <input type="checkbox" id="learn3" name="wants2_learn" value="code">
-                <label for="learn3" class="checkbox_txt"> Develop and test robot code</label><br>
-                <input type="checkbox" id="learn4" name="wants2_learn" value="market">
-                <label for="learn4" class="checkbox_txt"> Build a brand and market a team on social media</label><br>
-                <input type="checkbox" id="learn5" name="wants2_learn" value="data">
-                <label for="learn5" class="checkbox_txt"> Studying other teams and collecting data</label><br>
-                <input type="checkbox" id="learn6" name="wants2_learn" value="strat">
-                <label for="learn6" class="checkbox_txt"> Creating strategies to use during battles</label><br>
-                <br>
-                <label><b>
-                    What are your extracurriculars? Briefly explain how they affect you and 
-                    why you enjoy them:
-                </b></label><br>
-                <textarea id="ecs" name="ecs" required></textarea>
-                <br><br>
-                <label><b>Select all the subteams you would like to join from the following:</b></label>
-                <br>
-                <input type="checkbox" id="subteam1" name="subteam_choice" value="hardware">
-                <label for="subteam1" class="checkbox_txt"> Hardware</label><br>
-                <input type="checkbox" id="subteam2" name="subteam_choice" value="software">
-                <label for="subteam2" class="checkbox_txt"> Software</label><br>
-                <input type="checkbox" id="subteam3" name="subteam_choice" value="business">
-                <label for="subteam3" class="checkbox_txt"> Business</label><br>
-                <input type="checkbox" id="subteam4" name="subteam_choice" value="driveteam">
-                <label for="subteam4" class="checkbox_txt"> Driveteam</label><br>
-                <input type="checkbox" id="subteam5" name="subteam_choice" value="media">
-                <label for="subteam5" class="checkbox_txt"> Media</label><br>
-                <input type="checkbox" id="subteam6" name="subteam_choice" value="strategy">
-                <label for="subteam6" class="checkbox_txt"> Strategy</label><br>
-                <br>
-                <label><b>
-                    Why would you like to join this team? Include the your top subteam 
-                    choice as well (hardware, software, business):
-                </b></label><br>
-                <textarea id="reasoning" name="reasoning" required></textarea>
-                <br>
-            </div>
-
-            <div id="b4_submit" style="margin-bottom: 3rem;">
-                <span style="width: 25vw; display: inline-flex; justify-content: space-between;">
-                    <i class="fa fa-exclamation" style="margin-top: 1.1rem; font-size: 1.5rem;"></i>
-                    <h3>Read Before Submitting</h3>
-                </span>
-
-                <p>
-                    Participating on an FRC team is a major time commitment, especially during build 
-                    season (January - March) as we are only given eight weeks to design, build, and 
-                    program our competition robot. As a member, your teammates will rely on you to do 
-                    your part. By applying, you agree to this time commitment. Please note that 
-                    schoolwork is not an excuse for poor commitment during the season. You will also 
-                    be expected to attend in-person or online meetings in Stouffville. Additionally, 
-                    there will be a fee of $150 per member. We kindly request this fee to cover our 
-                    initial registration expenses. Rest assured, if we are successful with sponsorship 
-                    funds, we will promptly reimburse you.This ensures that tournament Registration 
-                    fees can be met and will allow the team to compete. If you cannot pay this fee, 
-                    there are options available to help you, so upon acceptance to the team, you are 
-                    encouraged to talk to the team's Co-Captains. This should not hold you back from 
-                    applying! All team members are expected to volunteer at events our team will 
-                    host/partner with for the community. It is embedded in our team values to spread 
-                    our love for STEM with those around us. In our team, we really value honesty. 
-                    If for any reason you can't get your work done in a week, just give us a heads-up. 
-                    We understand that things can go off track sometimes, and it's totally fine to 
-                    admit it. Just remember, honesty is key, so don't hesitate to let us know if things 
-                    didn't go as planned. Feel free to contact TheEruditesfrc@gmail.com for financial 
-                    support and other questions.
-                </p>
-
-                <input type="checkbox" id="agreement" name="agreement"  value="y">
-                <label class="checkbox_txt" required>I agree to the above.</label>
-            </div><br>
-
-            <!-- button to submit form -->
-            <button id="btn">
-                <span id="circle"></span>
-                <span id="btn_txt">Submit...</span>
-            </button>
-        </form>
+        
     </main>
 
     <!-- This is the footer for each page -->
@@ -187,8 +54,12 @@
 
         <div id="footer_icons">
             <i id="ftr_icon" class="fa fa-instagram"></i>
-            <i id="ftr_icon" class="fa fa-linkedin-square"></i>
-            <i id="ftr_icon" class="fa fa-envelope"></i>
+            <a id="ftr_icon" href="https://www.linkedin.com/company/the-erudites-frc-10279" target="_blank">
+                <i id="ftr_icon" class="fa fa-linkedin-square"></i>
+            </a>
+            <a id="ftr_icon" href="mailto:theerudites@gmail.com?subject=Sponsorship Opportunity" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
         </div>
         
     </footer>

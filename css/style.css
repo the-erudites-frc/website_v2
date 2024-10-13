@@ -10,7 +10,7 @@ body{
 
 h1{
     font-family: 'Cottsmic', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4vh;
     color: #5278f6;
 }
 
@@ -29,7 +29,7 @@ h2, h3 {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.8);
-    padding-top: 3rem;
+    padding-top: 3vh;
     transition: 0.4s;
     z-index: 100;
 }
@@ -48,7 +48,7 @@ h2, h3 {
     color: #5278f6;
     padding-top: 0.7rem;
     padding-bottom: 3rem;
-    /* margin-left: rem; */
+    margin-left: 5rem;
     transition: 0.4s;
 }
 
@@ -110,16 +110,29 @@ nav {
 #intro_section {
     margin-top: 17rem;
     display: inline-flex;
+    align-items: stretch; /* Ensures both the image and text stretch to the same height */
+    /* flex-wrap:wrap; */
 }
 
 #intro_img {
     margin-top: 2vw;
     margin-left: 9vw;
-    height: 60vw;
-    width: 40vw;
+    height: 50vw;
+    width: 30vw;
     transition: 100ms ease-in;
+    max-width: 40%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
 }
 
+#intro_txt{
+    max-width: 60%; 
+    padding-left: 2vw;
+    padding-right: 9rem;
+    display: flex;
+    flex-direction: column; /* Allows the content to be aligned vertically */
+    justify-content: center; /* Center the text vertically */
+}
 
 /* Stylikng for buttons on page */
 .btns{
@@ -207,6 +220,7 @@ footer{
 }
 
 #ftr_icon{
+    color:#8f9ece;
     transition:0.3s;
 }
 
@@ -217,7 +231,7 @@ footer{
 
 /* Sponsors page stylization */
 #sponsors_txt {
-    margin-top: 20rem;
+    padding-top: 20rem;
     margin-left: 9rem;
     margin-right: 9rem;
 }
@@ -326,7 +340,21 @@ th, td{
     margin-right: 9vw;
 }
 
-/* General form stylization */
+/* New form stylization (google form embed) */
+iframe{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+a:visited{
+    color: #8f9ece;
+}
+
+
+
+
+/* General form stylization (og form stylization)
 form{
     text-align: center;
     background-color: rgba(0, 0, 0);
@@ -412,4 +440,4 @@ input[type=checkbox]:hover + label.checkbox_txt{
 input[type=checkbox]:checked + label.checkbox_txt{
     color: #3d83ff;
     transition: 0.5s;
-}
+} */

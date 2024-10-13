@@ -54,11 +54,11 @@
         <!-- Why you should join our team section -->
         <div id="y_join_txt">
             <div style="display:flex; justify-content: center;">
-                <button id="expand_btn" onclick="show_below()">Why You Should Join Us...</button>
+                <button id="expand_btn" onclick="show_below('y_join_reasons')">Why You Should Join Us...</button>
             </div>
             
 
-            <ul id="below_shown" style="display: none;">
+            <ul id="y_join_reasons" style="display: none;">
                 <li>
                     <b>Valuable Experience With FIRST:</b>
                     <ul>
@@ -167,8 +167,12 @@
 
         <div id="footer_icons">
             <i id="ftr_icon" class="fa fa-instagram"></i>
-            <i id="ftr_icon" class="fa fa-linkedin-square"></i>
-            <i id="ftr_icon" class="fa fa-envelope"></i>
+            <a id="ftr_icon" href="https://www.linkedin.com/company/the-erudites-frc-10279" target="_blank">
+                <i id="ftr_icon" class="fa fa-linkedin-square"></i>
+            </a>
+            <a id="ftr_icon" href="mailto:theerudites@gmail.com?subject=Sponsorship Opportunity" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
         </div>
         
     </footer>
