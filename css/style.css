@@ -134,19 +134,9 @@ nav {
     justify-content: center; /* Center the text vertically */
 }
 
-/* Stylikng for buttons on page */
-.btns{
-    width: 60vw;
-    display: inline-flex;
-    justify-content: space-between;
-    padding-left: 20vw;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
 #btn {
     padding: 2rem;
-    width: 27vw;
+    width: 29vw;
     background: none;
     border-width: 0.3rem;
     border-style: solid;
@@ -262,6 +252,10 @@ th, td{
     border: 2px solid #5467A3;
 }
 
+#monetary, #buildspace, #materials{
+    display: none;
+}
+
 
 /* styling/functionality of the img carousel on the join page */
 .caro_wrapper{
@@ -315,25 +309,6 @@ th, td{
     opacity:1;
 }
 
-#expand_btn{
-    background: none; 
-    border: none; 
-    color: #5278f6;
-    font-size: 1.8rem;
-    font-family: 'Cottsmic', sans-serif;
-    transition: 0.4s;
-}
-
-#expand_btn:hover{
-    color: #104afb;
-    font-size: 2rem;
-}
-
-#expand_btn:active{
-    color: #5467A3;
-    font-size: 1.8rem;
-}
-
 /* Styling the "Why you should JOin us" Section */
 #y_join_txt{
     margin-left: 9vw;
@@ -351,93 +326,209 @@ a:visited{
     color: #8f9ece;
 }
 
+/* ----------------------------------- Stylization for smaller devices */
 
 
+@media screen and (max-width: 480px){
+    /* Styling for header shown on every page */
+    #header_div{
+        padding-top: 0vh;
+        padding-bottom: 3vh;
+    }
 
-/* General form stylization (og form stylization)
-form{
-    text-align: center;
-    background-color: rgba(0, 0, 0);
-    margin-left: 9vw;
-    margin-right: 9vw;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 4rem;
-    border-radius: 2rem;
+    #header_logo{
+        width: 10vh;
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
 
+    #header_title{
+        display:none;
+    }
+
+
+    #starting_gif {
+        height: 50vh;
+        margin-top: 20vh;
+        
+    }
+
+    .loaded #starting_gif {
+        z-index: -1000;
+        opacity: 0%;
+        transition: all 0.3s ease-out;
+    }
+
+    /* Styling for homepage intro section */
+    #intro_section {
+        margin-top: 30vh;
+        flex-wrap:wrap;
+    }
+
+    #intro_img {
+        height: 50vw;
+        min-width: 80%;
+    }
+
+    #intro_txt{
+        margin-top: 2rem;
+        min-width: 90%;
+        padding-left: 3vw;
+    }
+
+    #btn {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+
+    /* Styling for the footer */
+    footer{
+        left: 0;
+        width:100%;
+        display: block;
+        justify-content: none;
+    }
+
+    #footer_txt{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #footer_icons{
+        width:10rem;
+        display: flex;
+        margin-right: auto;
+        margin-left: 30vw;
+    }
+
+    /* Sponsors page stylization */
+    #sponsors_txt {
+        padding-top: 10rem;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        text-align: center;
+    }
+
+    .type_btns{
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    #btn_spons{
+        background: none;
+        border: none;
+        color: #8f9ece;
+        font-size: 2.5rem;
+        transition: 0.3s;
+    }
+
+    table{
+        border-collapse: collapse;
+        font-size: smaller;
+    }
+
+    th, td{
+        padding: 0.1rem;
+        border: 2px solid #5467A3;
+    }
+
+    #monetary, #buildspace, #materials{
+        display: none;
+    }
+
+    /* styling/functionality of the img carousel on the join page */
+    .caro_wrapper{
+        padding-top:12rem;
+    }
+
+    .caro{
+        height: 13rem;
+    }
+
+    .caro_nav{
+        bottom:16rem;
+    }
+
+    #expand_btn{
+        background: none; 
+        border: none; 
+        color: #5278f6;
+        font-size: 1.2rem;
+        font-family: 'Cottsmic', sans-serif;
+        transition: 0.4s;
+    }
+
+    #expand_btn:active{
+        color: #5467A3;
+        font-size: 0.8rem;
+    }
+
+    /* Styling the "Why you should JOin us" Section */
+    #y_join_txt{
+        margin-left: 9vw;
+        margin-right: 9vw;
+    }
+
+    /* New form stylization (google form embed) */
+    iframe{
+        margin-top: 5vh;
+        width:80vw;
+        height: 230vh;
+        font-size: smaller;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    a:visited{
+        color: #8f9ece;
+    }
 }
-input[type=text]{
-    margin:0.2rem;
-    color:#8f9ece;
-    font-size: large;
-    background-color: rgba(1, 8, 32);
-    border: none;
-    border-bottom: 0.2rem solid #5278f6;
-    transition: 0.2s
-}
 
-input[type=text]:hover{
-    border-bottom: 0.2rem solid #104afb;
-}
 
-textarea{
-    width:63vw;
-    height:20vh;
-    margin:0.2rem;
-    color:#8f9ece;
-    font-size: large;
-    background-color: rgba(0, 0, 0);
-    border: none;
-    border: 0.2rem solid #5278f6;
-    transition: 0.2s
-}
+@media screen and (min-width:481px){
+    .btns{
+        width: 60vw;
+        display: inline-flex;
+        justify-content: space-between;
+        padding-left: 20vw;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 
-textarea:hover{
-    border: 0.2rem solid #104afb;
-}
+    .type_btns{
+        margin-left: 15vw;
+        width: 50vw; 
+        display: flex; 
+        justify-content: space-between;
+    }
 
-input[type=radio]{
-    float: left;
-    margin-right:1rem;
-    margin-left:30vw;
-}
+    #monetary, #buildspace, #materials{
+        margin-left: 50px;
+    }
 
-input[type=checkbox]{
-    float: left;
-    margin-right:1rem;
-    margin-left:20vw;
+    #expand_btn{
+        background: none; 
+        border: none; 
+        color: #5278f6;
+        font-size: 1.8rem;
+        font-family: 'Cottsmic', sans-serif;
+        transition: 0.4s;
+    }
+    
+    #expand_btn:hover{
+        color: #104afb;
+        font-size: 2rem;
+    }
+    
+    #expand_btn:active{
+        color: #5467A3;
+        font-size: 1.8rem;
+    }
 }
-
-label.checkbox_txt{
-    float: left;
-}
-
-input[type=radio] + label:hover{
-    color:#104afb;
-    transition: 0.5s;
-}
-
-input[type=radio]:hover + label{
-    color:#104afb;
-    transition: 0.5s;
-}
-
-input[type=radio]:checked + label{
-    color: #3d83ff;
-    transition: 0.5s;
-}
-
-input[type=checkbox] + label.checkbox_txt:hover{
-    color:#104afb;
-    transition: 0.5s;
-}
-
-input[type=checkbox]:hover + label.checkbox_txt{
-    color:#104afb;
-    transition: 0.5s;
-}
-
-input[type=checkbox]:checked + label.checkbox_txt{
-    color: #3d83ff;
-    transition: 0.5s;
-} */
